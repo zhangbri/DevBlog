@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #4a4a4a; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #17a2b8;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #007bff;
+    font-size: 2em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #6c757d;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+p {
+    color: #4a4a4a;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+ul, li {
+    margin: 10px 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.post {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.hours-breakdown {
+    text-align: center;
+    margin: 40px auto;
+    width: 80%;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hours-breakdown h2, .hours-breakdown h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #007bff;
+}
+
+.hours-breakdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: table;
+}
+
+.hours-breakdown li {
+    background-color: #ffffff;
+    color: #4a4a4a;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.hours-breakdown ul ul {
+    margin-top: 10px;
+}
+
+.hours-breakdown ul ul li {
+    background-color: #f8f9fa;
+    margin-left: 20px;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .hours-breakdown {
+        width: 95%;
+    }
+
+    .hours-breakdown ul ul li {
+        margin-left: 10px;
+    }
+
+    .hours-breakdown h3 {
+        font-size: 1.2em;
+    }
+
+    .hours-breakdown ul {
+        width: 100%;
+    }
+}
+
+.post img {
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.image-container img {
+    flex: 1 1 200px;
+    max-width: 100%; 
+    height: auto; 
+    cursor: pointer; 
+}
