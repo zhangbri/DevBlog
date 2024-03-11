@@ -5,8 +5,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    padding-left: 20px; /* added left padding */
-    padding-right: 20px; /* added right padding */
+    padding-left: 20px; 
+    padding-right: 20px;
 }
 
 h1 {
@@ -126,6 +126,28 @@ ul, li {
 .image-container img {
     flex-basis: 70%; 
     max-height: 400px;
+}
+
+.image-container img {
+    width: 100%; 
+    max-width: 550px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.image-container img:nth-child(1), .image-container img:nth-child(2) {
+    flex: 1 1 50%; 
+}
+
+
+.image-container img:nth-child(3), .image-container img:nth-child(4) {
+    flex: 1 1 50%; 
+}
+
+
+.image-container img:nth-last-child(1):nth-child(odd) {
+    flex: 0 1 100%; 
 }
 
 .button {
