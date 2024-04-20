@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sprint 3</title>
+</head>
+<body>
+    <h1>QA 4 + Wrap-Up</h1>
+
+    <div class="post">
+        <h2>Leads Meeting</h2>
+        <p>In the lead meeting, the directors provided updates on the status of their departments with the approach of the two-week deadline before the game showcase. 
+           The emphasis was on incorporating the final assets and achieving as much balance as possible within the game. Unfinished art assets were noted as a priority to 
+           be completed and added into the game. A significant technical focus was on refining the infinite level or system to ensure it operates smoothly without causing 
+           any game softlocks. Addressing the enemies' behavior was identified as another critical task, with the goal of ironing out any unintended interactions with the 
+           player to ensure balanced gameplay. Furthermore, the team deliberated on the deployment process to Steam, considering assigning a dedicated group of programmers 
+           to conduct final polish and balance adjustments. This is to ensure the game is as refined as possible for its public release on the platform.
+        </p>
+    </div>
+
+    <div class="post">
+        <h2>Studio-wide Meeting</h2>
+        <p>At the studio-wide meeting, the team discussed the upcoming milestones for the end of the development cycle of their game. Deadlines were set for submitting 
+           Post-Mortem Forms by April 14th and Leadership Applications by the extended deadline of April 21st, which is also the end of development. The game's Launch and Showcase, 
+           as well as the opening of Summer 2024 Interest Forms, are scheduled for April 22nd. The final studio meeting, a Project Post-Mortem, is on April 28th, and the code 
+           repository will be locked on April 21st, preventing any further contributions. The Art and Audio teams are focusing on asset creation and implementation, filling 
+           any gaps in the art. The Design team is tasked with in-engine polish and balancing, including identifying any significant needs for adjustments. Programmers are working 
+           on bug fixes and integrating these assets, along with additional UI/UX implementations needed. The process involved squad meetings to playtest the build, where everyone 
+           was expected to participate and note issues on the feedback tracker. The Producer would document these observations. The main objectives were to search for bugs, propose 
+           design changes, and highlight anything missing. Prioritization was crucial, along with determining the reproducibility of bugs. In subsequent production meetings, the 
+           team reviewed all noted bugs for clarity and to eliminate duplicates.
+        </p>
+    </div>
+
+    <div class="post">
+    <h2>Playtesting Project Classic Prototype</h2>
+        <p>The game unfolds with a rich, darkly themed aesthetic from the main menu, featuring choices such as Start, Settings, Credits, and Quit, presented in a foreboding style with 
+           deep red hues and a mysteriously swirling background. The title’s design sets the tone for a potentially ominous and immersive experience. Moving to the weapon selection interface, 
+           the game offers a strategic layer with a variety of weaponry including 'Light' and 'Heavy' categories, alongside a unique 'Combo' option. Each weapon, from the "Mini Machine Gun" to the 
+           "Flamethrower," showcases distinctive art and suggests varied gameplay styles, with stats that influence damage output and rate of fire. In-game action portrays a side-scrolling platformer 
+           where the character navigates through levels with platforming elements and engages in combat with different enemies. Indicators for health and mana point to a gameplay balance between resource 
+           management and action, and there is an element of ability usage hinted at by icons for 'Light' and 'Strong' attacks. Challenges such as a boss named "Beeg Kitty, the Miasmic Pulverizer" suggest 
+           epic battles with unique adversaries. This particular encounter seems to be a significant test of player skill within a dedicated arena setting, typical of boss fights that emphasize strategy and 
+           skill. Environmental hazards like spikes and treacherous gaps are visible, emphasizing the need for careful navigation. The presence of a pause feature indicates real-time action gameplay that can be 
+           suspended, likely for strategic planning or a break in the action. However, assessing aspects like control responsiveness, game fluidity, and overall balance would require hands-on interaction with the game itself.
+        </p>
+        <div class="image-container">
+            <img src="images/homeScreen.png" width = "" alt = "The home screen of Eldritch Corrupt Order">
+            <img src="images/weapons.png" width = "" alt = "Light and heavy weapons selection menu with stats">
+            <img src="images/enemiesStage.png" width = "" alt = "A stage in the infinite runner where the soldiers and drones spawns">
+            <img src="images/shopkeeper.png" width = "" alt = "Shopkeeper room where player gains a health, a new weapon, and jump buff">
+            <img src="images/debuffer.png" width = "" alt = "The debuffer has a green aura and is chasing the player">
+            <img src="images/bluedebuffer.png" width = "" alt = "The debuffer is activated and is chasing the player with blue aura">
+            <img src="images/turretAttack.png" width = "" alt = "The turret is firing projectiles in a cross pattern">
+            <img src="images/explosions.png" width = "" alt = "The boss is rapidly and repeatedly shooting explosions all over the boss room">
+        </div>
+    </div>
+
+    <div class="post">
+        <h2>Update Feedback Tracker</h2>
+        <p>A playtest of the prototype game build revealed numerous bugs: melee soldiers harm the player during their death animations; a specific game seed is broken; art updates caused some soldiers to not 
+           attack and sink into the ground; soldier sprites incorrectly flip due to scaling issues. Boss battles lack necessary UI elements like health bars, and defeated bosses leave lingering attacks. 
+           Soldier movements are too slow, and one boss attack freezes the game. Boss behavior does not match the design documentation. Other issues include a boss that can leave the room, visibility 
+           problems with debuffer auras, incorrect soldier charging triggers, static ranged soldiers, enemy collider discrepancies, drones that don't track the player properly, floating soldiers, missing boss 
+           health bars, overly fast boss shrinking modes, erroneous enemy drops, and balance issues. Moreover, certain attacks inconsistently affect the player, and there are various issues with debuffers, 
+           including an insta-kill bug and invisibility of platforms. These bugs compromise gameplay and require fixes for a polished final product.
+        </p>
+        <div class="image-container">
+            <img src="images/trackerPolish.png" width = "" alt = "">
+        </div>
+    </div>
+
+    <div class="post">
+        <h2>Logging and Updating Tasks on Jira </h2>
+        <p>In the concluding two-week phase known as the "Polish Sprint," teams dedicate themselves to perfecting the product by systematically addressing the backlog of current bugs. This phase is critical for 
+           achieving a seamless and engaging user experience. The process begins with the prioritization of bugs, where the team evaluates and ranks issues based on their impact on gameplay and the overall user 
+           experience, focusing first on the most significant problems. Developers then embark on a meticulous resolution process, tackling the prioritized bugs by identifying their root causes, making the necessary 
+           code adjustments, and ensuring that their fixes do not adversely affect other product areas. Each resolved bug is subjected to rigorous testing, incorporating both automated tests and hands-on trials by the 
+           quality assurance team, to confirm that the issue is truly resolved. In instances where a fix leads to new bugs or fails to completely address the problem, the team reassesses and, if needed, reassigns a 
+           higher priority to the issue in the backlog. The cycle culminates with a comprehensive final verification, ensuring that all bugs have been remedied without introducing any new ones, and affirming that the 
+           game presents a polished and well-balanced experience.
+        </p>
+        <div class="image-container">
+            <img src="images/jiraPolish.png" width = "" alt = "">
+        </div>
+    </div>
+
+    <div class="hours-breakdown">
+        <h2>Hours Breakdown</h2>
+        <div>
+            <h3>QA 4</h3>
+            <ul>
+                <li>Leads Meeting (1 hour)</li>
+                <li>Studio-wide Meeting (2 hours 15 minutes)
+                    <ul>
+                        <li>Studio Announcements – 11:00 AM ~ 11:20 AM (10 mins)</li>
+                        <li>Project Announcements – 11:20 AM ~ 11:30 AM (20 mins)</li>
+                        <li>Squad Meeting – 11:30 AM ~ 12:15 PM (45 mins)</li>
+                        <li>Department Meeting – 12:15 PM ~ 1:15 PM (60 mins)</li>
+                    </ul>
+                </li>
+                <li>Logging and Updating Tasks on Jira (2 hours)</li>
+                <li>Playtesting Project Classic Prototype (2 hours 30 mins)</li>
+                <li>Update Feedback Tracker (1 hour 15 mins)</li>
+            </ul>
+
+            <h3>Wrap-Up</h3>
+            <ul>
+                <li>Leads Meeting (1 hour)</li>
+                <li>Studio-wide Meeting (2 hours 15 mins)</li>
+                    <ul>
+                        <li>Studio Announcements – 11:00 AM ~ 11:20 AM (10 mins)</li>
+                        <li>Project Announcements – 11:20 AM ~ 11:30 AM (20 mins)</li>
+                        <li>Squad Meeting – 11:30 AM ~ 12:15 PM (45 mins)</li>
+                        <li>Department Meeting – 12:15 PM ~ 1:15 PM (60 mins)</li>
+                        <li>Department Meeting – 1:15 PM ~ 2:15 PM (60 mins)</li>
+                    </ul>
+                </li>
+                <li>Logging and Updating Tasks on Jira (1 hour 30 mins)</li>
+                <li>Playtesting Project Classic Prototype (2 hours 45 mins)</li>
+                <li>Update Feedback Tracker (1 hour 30 mins)</li>
+            </ul>
+        </div>
+        <h3>Time Investment: 3 credits x 2 x 3 hours = 18 hours</h3>
+    </div>
+</body>
+</html>
